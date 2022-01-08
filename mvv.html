@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editeur de texte</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3" id="app"></div>
+        <label for="texte">Entrez votre texte ici</label><br>
+        <textarea id="texte" name="texte" v-binding="contenu_texte"></textarea><br>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+        <script>
+        new Vue({
+        el: "#app",
+        data: {
+        contenu_texte
+        }
+        })
+        </script>
+</body>
+</html>
+
